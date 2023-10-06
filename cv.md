@@ -1,10 +1,10 @@
 # Nikolay Potapenko
 
 ### Contacts
-E-mail: kolya-grek@list.ru
-Phone: +77712611796
-WhatsApp: +77712611796
-Telegram: @BYPS_PK
+* E-mail: kolya-grek@list.ru
+* Phone: +77712611796
+* WhatsApp: +77712611796
+* Telegram: @BYPS_PK
 
 ### About Me
 
