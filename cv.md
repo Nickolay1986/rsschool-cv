@@ -38,7 +38,7 @@ console.log(evenNumbers);
 
 ### Education
 
-* Higher education Computer Science and Computer Engineering 2004-2005
+* Higher education Computer Science and Computer Engineering 2004-2009
 * RS Schools Course «JavaScript/Front-end» in progress
 
 ### Languages
