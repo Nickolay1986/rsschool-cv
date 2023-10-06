@@ -38,7 +38,7 @@ console.log(evenNumbers);
 
 ### Education
 
-* Creative Commons licensed
+* Higher education Computer Science and Computer Engineering 2004-2005
 * RS Schools Course «JavaScript/Front-end» in progress
 
 ### Languages
