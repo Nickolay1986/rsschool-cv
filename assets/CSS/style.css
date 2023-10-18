@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow-x: hidden;
-    /**background-color: #204b44;*/
+    background-color: #204b44;
   }
   
   a {
@@ -212,11 +212,15 @@
     padding: 5px;
     padding-bottom: 10px;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    
   }
 
   .footer .section {
     display: flex;
     flex-direction: row;
+    width: 50%;
     
   }
 
@@ -339,28 +343,29 @@
       width: 90%;      
       margin: 10px;
     }
-
+    .footer {
+        flex-direction: column;
+    }
     .footer .section {
         
       margin-top: 0;
-      width: 200px;
+      width: auto;
       height: auto;      
       margin: 0;
-      display: block;
-
+      margin-top: 0;
+      
     }
 
     .footer .a {
         display: inline-flex;
         white-space: nowrap;
         font-size: 20px;
-        margin: 0 15px;
+        margin: 0 10px;
     }
 
     .footer .rs-logo {                    
-        margin: 0 0 0 15%;       
-      }
-
-     
+        margin: auto;
+        margin-left: 15px;       
+      }    
 
   }
