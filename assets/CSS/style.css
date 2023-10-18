@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow-x: hidden;
+    /**background-color: #204b44;*/
   }
   
   a {
@@ -25,14 +26,14 @@
     list-style: none;
   }
   
-  h1 {
+  .h1 {
     font-size: 50px;
     font-family: Verdana, sans-serif;
     margin-left: 5%;
     width: 90%;
   }
   
-  h3 {
+  .h3 {
     font-family: Verdana, sans-serif;
   }
   
@@ -65,7 +66,7 @@
   .box {
     max-width: 1280px;
     margin: 1%;
-    padding: 15;
+    padding: 15px;
   }
   
   .box-content {
@@ -144,6 +145,7 @@
     width: 100%;
     margin-bottom: 25px;
     padding-top: 0;
+
     
   }
   
@@ -187,12 +189,9 @@
   .main .code {
     font-family: monospace;
     font-size: 20px;
-    
-    margin-top: 0;
     width: 30em;
-    margin-top: 15px;
+    padding: 0;
     background-color: #8a8989;
-    font-family: monospace;
     white-space: pre;
   }
   
@@ -209,34 +208,82 @@
   
   
   .footer {
-    font-size: 25px;
     background-color: #204b44;
-    color: #ffffff;
     padding: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    height: auto;
+  }
+
+  .footer .section {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .footer .a {
+    white-space: normal;
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    width: 300px;
+    margin: auto;
+    margin-left: 5%;
+    white-space: nowrap;
+  }
+
+  .footer .a:hover {
+    color: #1808f7;
+    text-decoration: underline;
+  }
+
+  .footer .a:active {
+    color: #003172;
+    text-decoration: underline;
+  }
+
+
+
+  .rs-logo {
+    display: inline-block;
+    justify-content: flex-end;
+    width: 200px;
+    height: 110px;
+    background-image: url("../img/rs_school.svg");
+    background-size: 200px 110px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-right: 5%;
+  }
+
+  .rs-logo:hover {
+    filter: invert(0.7);    
+  }
+
+  .rs-logo:active {
+    filter: invert(1.0);    
   }
   
   
   
-  @media (max-width: 500px) {
-    .main .section {
-      display: block;
-      flex-direction: column;
-      
+  @media (max-width: 700px) {
+    body {
+        padding: 0;
+        margin: 0;
     }
   
     .header {      
       height: auto;
       overflow: auto;
-      min-width: 90%;
-      margin: 0 auto;
+      min-width: 100%;
+      margin: 0;
       padding: 0 ;  
       color: white;
       align-items: center;      
     }
   
     .header h1 {
-      margin-left: 10px;
+      margin-left: 15px;
+      font-size: 45px;
+      padding: 0;
     }
   
     .nav ul {
@@ -261,15 +308,19 @@
       flex-direction: column;
       
     }
+
+    .main .section {
+        display: block;
+        flex-direction: column;
+        
+      }
   
     .main .code {
       font-family: monospace;
-      font-size: 85%;
-      
+      font-size: 80%;      
       margin-top: 0;
       width: auto;
       height: auto;
-      margin-top: 15px;
       background-color: #8a8989;
       font-family: monospace;
       white-space: pre;
@@ -285,8 +336,31 @@
     .main .section p {
       font-size: 20px;
       margin-top: 0;
-      width: 90%;
-      
+      width: 90%;      
       margin: 10px;
     }
+
+    .footer .section {
+        
+      margin-top: 0;
+      width: 200px;
+      height: auto;      
+      margin: 0;
+      display: block;
+
+    }
+
+    .footer .a {
+        display: inline-flex;
+        white-space: nowrap;
+        font-size: 20px;
+        margin: 0 15px;
+    }
+
+    .footer .rs-logo {                    
+        margin: 0 0 0 15%;       
+      }
+
+     
+
   }
