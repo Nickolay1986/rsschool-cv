@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+    }
+  
+  body {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    background-color: #204b44;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .h1 {
+    font-size: 50px;
+    font-family: Verdana, sans-serif;
+    margin-left: 5%;
+    width: 90%;
+  }
+  
+  .h3 {
+    font-family: Verdana, sans-serif;
+  }
+  
+  .header {
+    min-height: 160px;
+    padding: 15px 0 0;
+    color: #faf8f8;
+    background-color: #204b44;
+    
+  }
+  
+  .photo {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;  
+    background-image: url("../img/logoSleep.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+  }
+  
+  .photo:hover {
+    background-image: url("../img/logo100.png");
+  }
+  
+  .photo:active {
+    background-image: url("../img/logoClick.png");
+  }
+  
+  .box {
+    max-width: 1280px;
+    margin: 1%;
+    padding: 15px;
+  }
+  
+  .box-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    
+  }
+  
+  .box-content .section {
+    display: flex;
+    
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    
+  }
+  
+  
+  
+  .nav {
+   
+    margin-bottom: 0;
+    justify-content: flex-end;
+  
+  }
+  
+  .nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+  }
+  
+  .nav li {
+    border: auto;
+    background-color: #0c9780;
+    width: 100px;
+    padding: 5px 1px;
+    margin: 5px;
+    display: flex;
+  }
+  
+  .nav li:hover {
+    background-color: #1cb69c;
+  }
+  
+  .nav li:active {
+    background-color: #104646;
+  }
+  
+  .nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav li a:active {
+    color: #135a5a;
+  }
+  
+  .main {
+    padding: 0;
+    flex-grow: 1;   /*flex-grow: 1 означает что элемент может растягиваться*/
+    background-color: #0c9780;
+  }
+  
+  .main .section {
+    display: flex;  
+    width: 100%;
+    margin-bottom: 25px;
+    padding-top: 0;
+
+    
+  }
+  
+  
+  
+  .main .section h3 {
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 0;
+    width: 40%;
+  }
+  
+  .main .section .italic {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-variant:small-caps;
+    color: #970707;
+  }
+  
+  .main .section p {
+    font-size: 20px;
+    margin-top: 0;
+    padding-left: 1%;
+    width: 40%;
+  }
+  
+  .main .section a {
+    color: #0041a3 ;
+  }
+  
+  .main .section a:hover {
+    color: #003172;
+    text-decoration: underline;
+  }
+  
+  .main .section a:active {
+    color: #1808f7;
+  }
+  
+  .main .code {
+    font-family: monospace;
+    font-size: 20px;
+    width: 30em;
+    padding: 0;
+    background-color: #8a8989;
+    white-space: pre;
+  }
+  
+  .main ul {
+    margin-top: 0;
+    margin-left: -2%;
+  }
+  
+  .main ul li {
+    font-size: 20px;
+  }
+  
+  
+  
+  
+  .footer {
+    background-color: #204b44;
+    padding: 5px;
+    padding-bottom: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .footer .section {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    
+  }
+
+  .footer .a {
+    white-space: normal;
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    width: 300px;
+    margin: auto;
+    margin-left: 5%;
+    white-space: nowrap;
+  }
+
+  .footer .a:hover {
+    color: #1808f7;
+    text-decoration: underline;
+  }
+
+  .footer .a:active {
+    color: #003172;
+    text-decoration: underline;
+  }
+
+
+
+  .rs-logo {
+    display: inline-block;
+    justify-content: flex-end;
+    width: 200px;
+    height: 110px;
+    background-image: url("../img/rs_school.svg");
+    background-size: 200px 110px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-right: 5%;
+  }
+
+  .rs-logo:hover {
+    filter: invert(0.7);    
+  }
+
+  .rs-logo:active {
+    filter: invert(1.0);    
+  }
+  
+  
+  
+  @media (max-width: 700px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+  
+    .header {      
+      height: auto;
+      overflow: auto;
+      min-width: 100%;
+      margin: 0;
+      padding: 0 ;  
+      color: white;
+      align-items: center;      
+    }
+  
+    .header h1 {
+      margin-left: 15px;
+      font-size: 45px;
+      padding: 0;
+    }
+  
+    .nav ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+      margin-left: 0;
+    }
+    .nav li {
+      width: 80%;
+      margin-left: 0;
+      margin-top: 2%;
+      
+      padding: 5px;    
+    }
+  
+    .photo {
+      margin-left: 32%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+
+    .main .section {
+        display: block;
+        flex-direction: column;
+        
+      }
+  
+    .main .code {
+      font-family: monospace;
+      font-size: 80%;      
+      margin-top: 0;
+      width: auto;
+      height: auto;
+      background-color: #8a8989;
+      font-family: monospace;
+      white-space: pre;
+    }
+  
+    .main .section h3 {
+      font-size: 30px;
+      margin-left: 5%;
+      margin-top: 0;
+      width: 100%;
+    }
+    
+    .main .section p {
+      font-size: 20px;
+      margin-top: 0;
+      width: 90%;      
+      margin: 10px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .section {
+        
+      margin-top: 0;
+      width: auto;
+      height: auto;      
+      margin: 0;
+      margin-top: 0;
+      
+    }
+
+    .footer .a {
+        display: inline-flex;
+        white-space: nowrap;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .footer .rs-logo {                    
+        margin: auto;
+        margin-left: 15px;       
+      }    
+
+  }
