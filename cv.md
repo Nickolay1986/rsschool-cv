@@ -8,7 +8,7 @@
 
 ### About Me
 
-I want to become part of a professional and friendly team where I will build up my developer skills.
+I want to become part of a professional and friendly team where I will build up my developer skills .
 
 ### Skills
 
